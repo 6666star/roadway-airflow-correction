@@ -1,0 +1,4624 @@
+{
+  "schema_version": 1,
+  "exe": "C:\\Users\\staro\\Desktop\\Cluade\\Project_1_v2\\build-codex\\airflow_cli.exe",
+  "exe_sha256": "5b6e4204ba76dcd678682b5d6f85a7fce65fbddfe82e5a9dbeacd27703da2170",
+  "eta_mean_contour": 0.7768698398515702,
+  "no_parameter_fitting": true,
+  "warning": "Contour errors are not velocity errors. Roughness values are assumptions.",
+  "counts": {
+    "contour_evaluations": 84,
+    "field_cases": 2,
+    "field_sensitivity_evaluations": 6,
+    "trapezoid_verified_cases": 0
+  },
+  "summary": {
+    "Ding2016_2017_floor": {
+      "radial_wall_gap_error_pct": {
+        "n_evaluations": 25,
+        "mean_absolute": 7.800243962832511,
+        "min_absolute": 3.156624435539057,
+        "max_absolute": 18.16122435343559
+      },
+      "radial_position_error_m": {
+        "n_evaluations": 25,
+        "mean_absolute": 0.003751417350018489,
+        "min_absolute": 0.003380744770462334,
+        "max_absolute": 0.0043252657795981335
+      },
+      "conditional_speed_bias_pct": {
+        "n_evaluations": 25,
+        "mean_absolute": 0.8490122055880001,
+        "min_absolute": 0.35410067873300477,
+        "max_absolute": 1.931283637686998
+      }
+    },
+    "Ding2016_2017_side": {
+      "radial_wall_gap_error_pct": {
+        "n_evaluations": 30,
+        "mean_absolute": 18.74225201769884,
+        "min_absolute": 16.988391951892147,
+        "max_absolute": 22.522865418762915
+      },
+      "radial_position_error_m": {
+        "n_evaluations": 30,
+        "mean_absolute": 0.013544342753402777,
+        "min_absolute": 0.005337001794643084,
+        "max_absolute": 0.02253267627055818
+      },
+      "conditional_speed_bias_pct": {
+        "n_evaluations": 30,
+        "mean_absolute": 1.9878936565225984,
+        "min_absolute": 1.8137468134689971,
+        "max_absolute": 2.360677159731006
+      }
+    },
+    "Wang2015_Table3": {
+      "radial_wall_gap_error_pct": {
+        "n_evaluations": 24,
+        "mean_absolute": 28.940253518016057,
+        "min_absolute": 25.023467692059874,
+        "max_absolute": 32.302742673413285
+      },
+      "radial_position_error_m": {
+        "n_evaluations": 24,
+        "mean_absolute": 0.13663809311068856,
+        "min_absolute": 0.09308729981446275,
+        "max_absolute": 0.18052221974024724
+      },
+      "conditional_speed_bias_pct": {
+        "n_evaluations": 24,
+        "mean_absolute": 4.297020601291262,
+        "min_absolute": 3.6853174176144976,
+        "max_absolute": 4.975196728223996
+      }
+    },
+    "Yang2026_Table5_FLAGGED": {
+      "radial_wall_gap_error_pct": {
+        "n_evaluations": 5,
+        "mean_absolute": 2.992627685784921,
+        "min_absolute": 1.3668250817352567,
+        "max_absolute": 4.372788507815651
+      },
+      "radial_position_error_m": {
+        "n_evaluations": 5,
+        "mean_absolute": 0.015557139666032381,
+        "min_absolute": 0.006957139666032451,
+        "max_absolute": 0.022957139666032095
+      },
+      "conditional_speed_bias_pct": {
+        "n_evaluations": 5,
+        "mean_absolute": 0.3809631255823809,
+        "min_absolute": 0.17263803340810124,
+        "max_absolute": 0.5587109403413004
+      }
+    }
+  },
+  "field_cases": [
+    {
+      "source": "Wang2015_Table4",
+      "case": "auxiliary_inclined_shaft",
+      "geometry_m": [
+        4.2,
+        3.4
+      ],
+      "point_m": [
+        2.1,
+        2.909
+      ],
+      "epsilon_m_assumed": 0.001,
+      "reference_mean_mps": 5.18,
+      "measured_mps": 5.2,
+      "raw_error_pct": 0.38610038610038533,
+      "corrected_error_pct": -2.289950088167947,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.3872118011655,
+        "radial_eta": 0.711176470588235,
+        "equivalent_radius_m": 1.8492040320522,
+        "equivalent_wall_distance_m": 0.534093635139783,
+        "true_wall_distance_m": 0.491,
+        "measured_velocity_mps": 5.2,
+        "correction_factor": 0.973342420275557,
+        "mean_velocity_mps": 5.0613805854329,
+        "air_volume_m3ps": 62.6963933180643,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      }
+    },
+    {
+      "source": "Wang2015_Table4",
+      "case": "auxiliary_inclined_shaft",
+      "geometry_m": [
+        4.2,
+        3.4
+      ],
+      "point_m": [
+        2.1,
+        2.909
+      ],
+      "epsilon_m_assumed": 0.0055,
+      "reference_mean_mps": 5.18,
+      "measured_mps": 5.2,
+      "raw_error_pct": 0.38610038610038533,
+      "corrected_error_pct": -2.8619276629083035,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.3872118011655,
+        "radial_eta": 0.711176470588235,
+        "equivalent_radius_m": 1.8492040320522,
+        "equivalent_wall_distance_m": 0.534093635139783,
+        "true_wall_distance_m": 0.491,
+        "measured_velocity_mps": 5.2,
+        "correction_factor": 0.967644643665645,
+        "mean_velocity_mps": 5.03175214706135,
+        "air_volume_m3ps": 62.3293795766182,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      }
+    },
+    {
+      "source": "Wang2015_Table4",
+      "case": "auxiliary_inclined_shaft",
+      "geometry_m": [
+        4.2,
+        3.4
+      ],
+      "point_m": [
+        2.1,
+        2.909
+      ],
+      "epsilon_m_assumed": 0.01,
+      "reference_mean_mps": 5.18,
+      "measured_mps": 5.2,
+      "raw_error_pct": 0.38610038610038533,
+      "corrected_error_pct": -3.125114842559451,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.3872118011655,
+        "radial_eta": 0.711176470588235,
+        "equivalent_radius_m": 1.8492040320522,
+        "equivalent_wall_distance_m": 0.534093635139783,
+        "true_wall_distance_m": 0.491,
+        "measured_velocity_mps": 5.2,
+        "correction_factor": 0.965022894452966,
+        "mean_velocity_mps": 5.01811905115542,
+        "air_volume_m3ps": 62.1605035301259,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      }
+    },
+    {
+      "source": "Wang2015_Table4",
+      "case": "auxiliary_intake_main",
+      "geometry_m": [
+        4.0,
+        3.5
+      ],
+      "point_m": [
+        2.0,
+        2.9539999999999997
+      ],
+      "epsilon_m_assumed": 0.001,
+      "reference_mean_mps": 2.23,
+      "measured_mps": 2.24,
+      "raw_error_pct": 0.4484304932735439,
+      "corrected_error_pct": -3.0026384928035887,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.2831853071796,
+        "radial_eta": 0.688,
+        "equivalent_radius_m": 1.84943370481183,
+        "equivalent_wall_distance_m": 0.57702331590129,
+        "true_wall_distance_m": 0.546,
+        "measured_velocity_mps": 2.24,
+        "correction_factor": 0.965643375718965,
+        "mean_velocity_mps": 2.16304116161048,
+        "air_volume_m3ps": 26.5690354151185,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      }
+    },
+    {
+      "source": "Wang2015_Table4",
+      "case": "auxiliary_intake_main",
+      "geometry_m": [
+        4.0,
+        3.5
+      ],
+      "point_m": [
+        2.0,
+        2.9539999999999997
+      ],
+      "epsilon_m_assumed": 0.0055,
+      "reference_mean_mps": 2.23,
+      "measured_mps": 2.24,
+      "raw_error_pct": 0.4484304932735439,
+      "corrected_error_pct": -3.733186729652016,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.2831853071796,
+        "radial_eta": 0.688,
+        "equivalent_radius_m": 1.84943370481183,
+        "equivalent_wall_distance_m": 0.57702331590129,
+        "true_wall_distance_m": 0.546,
+        "measured_velocity_mps": 2.24,
+        "correction_factor": 0.958370507111054,
+        "mean_velocity_mps": 2.14674993592876,
+        "air_volume_m3ps": 26.3689272711889,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      }
+    },
+    {
+      "source": "Wang2015_Table4",
+      "case": "auxiliary_intake_main",
+      "geometry_m": [
+        4.0,
+        3.5
+      ],
+      "point_m": [
+        2.0,
+        2.9539999999999997
+      ],
+      "epsilon_m_assumed": 0.01,
+      "reference_mean_mps": 2.23,
+      "measured_mps": 2.24,
+      "raw_error_pct": 0.4484304932735439,
+      "corrected_error_pct": -4.068508756911204,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.2831853071796,
+        "radial_eta": 0.688,
+        "equivalent_radius_m": 1.84943370481183,
+        "equivalent_wall_distance_m": 0.57702331590129,
+        "true_wall_distance_m": 0.546,
+        "measured_velocity_mps": 2.24,
+        "correction_factor": 0.955032256571822,
+        "mean_velocity_mps": 2.13927225472088,
+        "air_volume_m3ps": 26.2770775272445,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      }
+    }
+  ],
+  "source_consistency_audit": [
+    {
+      "inlet_mps": 0.5,
+      "table5_floor_distance_m": 0.523,
+      "table4_velocity_at_table5_point_mps": 0.47052244731203613,
+      "table4_root_for_inlet_mean_m": 0.7199314310514923
+    },
+    {
+      "inlet_mps": 1,
+      "table5_floor_distance_m": 0.509,
+      "table4_velocity_at_table5_point_mps": 0.9416220693004772,
+      "table4_root_for_inlet_mean_m": 0.6883294204331014
+    },
+    {
+      "inlet_mps": 3,
+      "table5_floor_distance_m": 0.513,
+      "table4_velocity_at_table5_point_mps": 2.824635125751757,
+      "table4_root_for_inlet_mean_m": 0.7034030763573925
+    },
+    {
+      "inlet_mps": 5,
+      "table5_floor_distance_m": 0.518,
+      "table4_velocity_at_table5_point_mps": 4.707952722143736,
+      "table4_root_for_inlet_mean_m": 0.716526003897515
+    },
+    {
+      "inlet_mps": 8,
+      "table5_floor_distance_m": 0.525,
+      "table4_velocity_at_table5_point_mps": 7.5365922109952574,
+      "table4_root_for_inlet_mean_m": 0.7304877966691364
+    }
+  ],
+  "contour_cases": [
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W3.5_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        3.5,
+        3.5
+      ],
+      "reference_point_m": [
+        1.75,
+        2.943
+      ],
+      "default_center_m": [
+        1.75,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        1.75,
+        3.1095222197402475
+      ],
+      "radial_position_error_m": 0.16652221974024722,
+      "radial_wall_gap_error_pct": -29.896269253186258,
+      "conditional_speed_bias_pct": -4.430060781719202,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 10.9355637508094,
+        "radial_eta": 0.681714285714286,
+        "equivalent_radius_m": 1.75,
+        "equivalent_wall_distance_m": 0.557,
+        "true_wall_distance_m": 0.557,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.955699392182808,
+        "mean_velocity_mps": 0.955699392182808,
+        "air_volume_m3ps": 10.4511116298249,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.557,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W4.0_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.0,
+        3.5
+      ],
+      "reference_point_m": [
+        2.0,
+        2.9539999999999997
+      ],
+      "default_center_m": [
+        2.0,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.0,
+        3.1095222197402475
+      ],
+      "radial_position_error_m": 0.15552221974024794,
+      "radial_wall_gap_error_pct": -28.483923029349434,
+      "conditional_speed_bias_pct": -4.162949288894602,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.2831853071796,
+        "radial_eta": 0.688,
+        "equivalent_radius_m": 1.84943370481183,
+        "equivalent_wall_distance_m": 0.57702331590129,
+        "true_wall_distance_m": 0.546,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.958370507111054,
+        "mean_velocity_mps": 0.958370507111054,
+        "air_volume_m3ps": 11.7718425317807,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.546,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W4.5_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.5,
+        3.5
+      ],
+      "reference_point_m": [
+        2.25,
+        2.965
+      ],
+      "default_center_m": [
+        2.25,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.25,
+        3.1095222197402483
+      ],
+      "radial_position_error_m": 0.1445222197402485,
+      "radial_wall_gap_error_pct": -27.013499016868835,
+      "conditional_speed_bias_pct": -3.8993980805382966,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 13.5771564043992,
+        "radial_eta": 0.694285714285714,
+        "equivalent_radius_m": 1.93013837289225,
+        "equivalent_wall_distance_m": 0.590070873998487,
+        "true_wall_distance_m": 0.535,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.961006019194617,
+        "mean_velocity_mps": 0.961006019194617,
+        "air_volume_m3ps": 13.0477290281743,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.535,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W5.0_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5.0,
+        3.5
+      ],
+      "reference_point_m": [
+        2.5,
+        2.972
+      ],
+      "default_center_m": [
+        2.5,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        3.1095222197402483
+      ],
+      "radial_position_error_m": 0.13752221974024853,
+      "radial_wall_gap_error_pct": -26.045874950804603,
+      "conditional_speed_bias_pct": -3.727110566051095,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 14.8174770424681,
+        "radial_eta": 0.698285714285714,
+        "equivalent_radius_m": 1.99508487456011,
+        "equivalent_wall_distance_m": 0.60194560786728,
+        "true_wall_distance_m": 0.528,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.962728894339489,
+        "mean_velocity_mps": 0.962728894339489,
+        "air_volume_m3ps": 14.2652132899961,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.528,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W3.5_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        3.5,
+        3.0
+      ],
+      "reference_point_m": [
+        1.75,
+        2.516
+      ],
+      "default_center_m": [
+        1.75,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        1.75,
+        2.6653047597773556
+      ],
+      "radial_position_error_m": 0.14930475977735586,
+      "radial_wall_gap_error_pct": -30.848090863090004,
+      "conditional_speed_bias_pct": -4.645357862023703,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 9.18556375080937,
+        "radial_eta": 0.677333333333333,
+        "equivalent_radius_m": 1.59779679966972,
+        "equivalent_wall_distance_m": 0.515555767360096,
+        "true_wall_distance_m": 0.484,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.953546421379763,
+        "mean_velocity_mps": 0.953546421379763,
+        "air_volume_m3ps": 8.75886144293994,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.484,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W4.0_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.0,
+        3.0
+      ],
+      "reference_point_m": [
+        2.0,
+        2.529
+      ],
+      "default_center_m": [
+        2.0,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.0,
+        2.665304759777355
+      ],
+      "radial_position_error_m": 0.1363047597773552,
+      "radial_wall_gap_error_pct": -28.939439443175218,
+      "conditional_speed_bias_pct": -4.291892783914597,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 10.2831853071796,
+        "radial_eta": 0.686,
+        "equivalent_radius_m": 1.67435157086965,
+        "equivalent_wall_distance_m": 0.525746393253071,
+        "true_wall_distance_m": 0.471,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.957081072160854,
+        "mean_velocity_mps": 0.957081072160854,
+        "air_volume_m3ps": 9.84184201902418,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.471,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W4.5_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.5,
+        3.0
+      ],
+      "reference_point_m": [
+        2.25,
+        2.542
+      ],
+      "default_center_m": [
+        2.25,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.25,
+        2.6653047597773547
+      ],
+      "radial_position_error_m": 0.12330475977735476,
+      "radial_wall_gap_error_pct": -26.922436632610257,
+      "conditional_speed_bias_pct": -3.936950726087396,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 11.3271564043992,
+        "radial_eta": 0.694666666666667,
+        "equivalent_radius_m": 1.73349413574951,
+        "equivalent_wall_distance_m": 0.529293542782185,
+        "true_wall_distance_m": 0.458,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.960630492739126,
+        "mean_velocity_mps": 0.960630492739126,
+        "air_volume_m3ps": 10.8812118380911,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.458,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W5.0_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5.0,
+        3.0
+      ],
+      "reference_point_m": [
+        2.5,
+        2.545
+      ],
+      "default_center_m": [
+        2.5,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        2.6653047597773547
+      ],
+      "radial_position_error_m": 0.12030475977735476,
+      "radial_wall_gap_error_pct": -26.44060654447362,
+      "conditional_speed_bias_pct": -3.845347090071405,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.3174770424681,
+        "radial_eta": 0.696666666666667,
+        "equivalent_radius_m": 1.77818584835736,
+        "equivalent_wall_distance_m": 0.539383040668399,
+        "true_wall_distance_m": 0.455,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.961546529099286,
+        "mean_velocity_mps": 0.961546529099286,
+        "air_volume_m3ps": 11.8438272974453,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.455,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W3.5_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        3.5,
+        2.5
+      ],
+      "reference_point_m": [
+        1.75,
+        2.092
+      ],
+      "default_center_m": [
+        1.75,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        1.75,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.12908729981446282,
+      "radial_wall_gap_error_pct": -31.63904407217225,
+      "conditional_speed_bias_pct": -4.856820567187703,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 7.43556375080937,
+        "radial_eta": 0.6736,
+        "equivalent_radius_m": 1.41659640245487,
+        "equivalent_wall_distance_m": 0.462377065761269,
+        "true_wall_distance_m": 0.408,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.951431794328123,
+        "mean_velocity_mps": 0.951431794328123,
+        "air_volume_m3ps": 7.07443176127371,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.408,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W4.0_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.0,
+        2.5
+      ],
+      "reference_point_m": [
+        2.0,
+        2.106
+      ],
+      "default_center_m": [
+        2.0,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.0,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.11508729981446279,
+      "radial_wall_gap_error_pct": -29.209974572198682,
+      "conditional_speed_bias_pct": -4.4104842278062995,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 8.28318530717959,
+        "radial_eta": 0.6848,
+        "equivalent_radius_m": 1.46823526897301,
+        "equivalent_wall_distance_m": 0.462787756780294,
+        "true_wall_distance_m": 0.394,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.955895157721937,
+        "mean_velocity_mps": 0.955895157721937,
+        "air_volume_m3ps": 7.91785672564646,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.394,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W4.5_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.5,
+        2.5
+      ],
+      "reference_point_m": [
+        2.25,
+        2.125
+      ],
+      "default_center_m": [
+        2.25,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.25,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.09608729981446282,
+      "radial_wall_gap_error_pct": -25.623279950523415,
+      "conditional_speed_bias_pct": -3.7916539369974966,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 9.07715640439916,
+        "radial_eta": 0.7,
+        "equivalent_radius_m": 1.50426210773271,
+        "equivalent_wall_distance_m": 0.451278632319812,
+        "true_wall_distance_m": 0.375,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.962083460630025,
+        "mean_velocity_mps": 0.962083460630025,
+        "air_volume_m3ps": 8.73298204622434,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.375,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "masonry_W5.0_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5.0,
+        2.5
+      ],
+      "reference_point_m": [
+        2.5,
+        2.128
+      ],
+      "default_center_m": [
+        2.5,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.09308729981446275,
+      "radial_wall_gap_error_pct": -25.023467692059874,
+      "conditional_speed_bias_pct": -3.6853174176144976,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 9.8174770424681,
+        "radial_eta": 0.7024,
+        "equivalent_radius_m": 1.52753867587914,
+        "equivalent_wall_distance_m": 0.454595509941633,
+        "true_wall_distance_m": 0.372,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.963146825823855,
+        "mean_velocity_mps": 0.963146825823855,
+        "air_volume_m3ps": 9.45567185105172,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.372,
+      "wall": "roof",
+      "support": "masonry",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W3.5_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        3.5,
+        3.5
+      ],
+      "reference_point_m": [
+        1.75,
+        2.9290000000000003
+      ],
+      "default_center_m": [
+        1.75,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        1.75,
+        3.1095222197402475
+      ],
+      "radial_position_error_m": 0.18052221974024724,
+      "radial_wall_gap_error_pct": -31.615099779377843,
+      "conditional_speed_bias_pct": -4.7250416522436005,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 10.9355637508094,
+        "radial_eta": 0.673714285714286,
+        "equivalent_radius_m": 1.75,
+        "equivalent_wall_distance_m": 0.571,
+        "true_wall_distance_m": 0.571,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.952749583477564,
+        "mean_velocity_mps": 0.952749583477564,
+        "air_volume_m3ps": 10.418853808676,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.571,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W4.0_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.0,
+        3.5
+      ],
+      "reference_point_m": [
+        2.0,
+        2.94
+      ],
+      "default_center_m": [
+        2.0,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.0,
+        3.1095222197402475
+      ],
+      "radial_position_error_m": 0.16952221974024775,
+      "radial_wall_gap_error_pct": -30.271824953615678,
+      "conditional_speed_bias_pct": -4.463301872590497,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.2831853071796,
+        "radial_eta": 0.68,
+        "equivalent_radius_m": 1.84943370481183,
+        "equivalent_wall_distance_m": 0.591818785539785,
+        "true_wall_distance_m": 0.56,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.955366981274095,
+        "mean_velocity_mps": 0.955366981274095,
+        "air_volume_m3ps": 11.7349496673505,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.56,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W4.5_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.5,
+        3.5
+      ],
+      "reference_point_m": [
+        2.25,
+        2.95
+      ],
+      "default_center_m": [
+        2.25,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.25,
+        3.1095222197402475
+      ],
+      "radial_position_error_m": 0.15952221974024722,
+      "radial_wall_gap_error_pct": -29.004039952772263,
+      "conditional_speed_bias_pct": -4.2273359918095,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 13.5771564043992,
+        "radial_eta": 0.685714285714286,
+        "equivalent_radius_m": 1.93013837289225,
+        "equivalent_wall_distance_m": 0.606614917194706,
+        "true_wall_distance_m": 0.55,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.957726640081905,
+        "mean_velocity_mps": 0.957726640081905,
+        "air_volume_m3ps": 13.0032043850517,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.55,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W5.0_H3.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5.0,
+        3.5
+      ],
+      "reference_point_m": [
+        2.5,
+        2.957
+      ],
+      "default_center_m": [
+        2.5,
+        1.75
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        3.1095222197402475
+      ],
+      "radial_position_error_m": 0.15252221974024738,
+      "radial_wall_gap_error_pct": -28.088806581997716,
+      "conditional_speed_bias_pct": -4.059100287705098,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 14.8174770424681,
+        "radial_eta": 0.689714285714286,
+        "equivalent_radius_m": 1.99508487456011,
+        "equivalent_wall_distance_m": 0.61904633536351,
+        "true_wall_distance_m": 0.543,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.959408997122949,
+        "mean_velocity_mps": 0.959408997122949,
+        "air_volume_m3ps": 14.2160207892066,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.543,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.39047778025975216
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W3.5_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        3.5,
+        3.0
+      ],
+      "reference_point_m": [
+        1.75,
+        2.512
+      ],
+      "default_center_m": [
+        1.75,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        1.75,
+        2.6653047597773547
+      ],
+      "radial_position_error_m": 0.1533047597773548,
+      "radial_wall_gap_error_pct": -31.4149097904416,
+      "conditional_speed_bias_pct": -4.744092692436097,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 9.18556375080937,
+        "radial_eta": 0.674666666666667,
+        "equivalent_radius_m": 1.59779679966972,
+        "equivalent_wall_distance_m": 0.519816558825882,
+        "true_wall_distance_m": 0.488,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.952559073075639,
+        "mean_velocity_mps": 0.952559073075639,
+        "air_volume_m3ps": 8.74979209214817,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.488,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W4.0_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.0,
+        3.0
+      ],
+      "reference_point_m": [
+        2.0,
+        2.519
+      ],
+      "default_center_m": [
+        2.0,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.0,
+        2.665304759777356
+      ],
+      "radial_position_error_m": 0.14630475977735588,
+      "radial_wall_gap_error_pct": -30.416789974502212,
+      "conditional_speed_bias_pct": -4.5438321790907015,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 10.2831853071796,
+        "radial_eta": 0.679333333333333,
+        "equivalent_radius_m": 1.67435157086965,
+        "equivalent_wall_distance_m": 0.536908737058868,
+        "true_wall_distance_m": 0.481,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.954561678209093,
+        "mean_velocity_mps": 0.954561678209093,
+        "air_volume_m3ps": 9.81593462415643,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.481,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W4.5_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.5,
+        3.0
+      ],
+      "reference_point_m": [
+        2.25,
+        2.526
+      ],
+      "default_center_m": [
+        2.25,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.25,
+        2.665304759777355
+      ],
+      "radial_position_error_m": 0.1393047597773552,
+      "radial_wall_gap_error_pct": -29.38918982644626,
+      "conditional_speed_bias_pct": -4.349220602093295,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 11.3271564043992,
+        "radial_eta": 0.684,
+        "equivalent_radius_m": 1.73349413574951,
+        "equivalent_wall_distance_m": 0.547784146896847,
+        "true_wall_distance_m": 0.474,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.956507793979067,
+        "mean_velocity_mps": 0.956507793979067,
+        "air_volume_m3ps": 10.8345133844277,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.474,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W5.0_H3.0",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5.0,
+        3.0
+      ],
+      "reference_point_m": [
+        2.5,
+        2.529
+      ],
+      "default_center_m": [
+        2.5,
+        1.5
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        2.665304759777355
+      ],
+      "radial_position_error_m": 0.1363047597773552,
+      "radial_wall_gap_error_pct": -28.939439443175218,
+      "conditional_speed_bias_pct": -4.259695079066295,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 12.3174770424681,
+        "radial_eta": 0.686,
+        "equivalent_radius_m": 1.77818584835736,
+        "equivalent_wall_distance_m": 0.558350356384211,
+        "true_wall_distance_m": 0.471,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.957403049209337,
+        "mean_velocity_mps": 0.957403049209337,
+        "air_volume_m3ps": 11.792790079025,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.471,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.33469524022264474
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W3.5_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        3.5,
+        2.5
+      ],
+      "reference_point_m": [
+        1.75,
+        2.088
+      ],
+      "default_center_m": [
+        1.75,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        1.75,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.1330872998144628,
+      "radial_wall_gap_error_pct": -32.302742673413285,
+      "conditional_speed_bias_pct": -4.975196728223996,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 7.43556375080937,
+        "radial_eta": 0.6704,
+        "equivalent_radius_m": 1.41659640245487,
+        "equivalent_wall_distance_m": 0.466910174249124,
+        "true_wall_distance_m": 0.412,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.95024803271776,
+        "mean_velocity_mps": 0.95024803271776,
+        "air_volume_m3ps": 7.06562982635409,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.412,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W4.0_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.0,
+        2.5
+      ],
+      "reference_point_m": [
+        2.0,
+        2.099
+      ],
+      "default_center_m": [
+        2.0,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.0,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.12208729981446276,
+      "radial_wall_gap_error_pct": -30.445710676923376,
+      "conditional_speed_bias_pct": -4.624924075525804,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 8.28318530717959,
+        "radial_eta": 0.6792,
+        "equivalent_radius_m": 1.46823526897301,
+        "equivalent_wall_distance_m": 0.471009874286543,
+        "true_wall_distance_m": 0.401,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.953750759244742,
+        "mean_velocity_mps": 0.953750759244742,
+        "air_volume_m3ps": 7.90009427568743,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.401,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W4.5_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        4.5,
+        2.5
+      ],
+      "reference_point_m": [
+        2.25,
+        2.108
+      ],
+      "default_center_m": [
+        2.25,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.25,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.11308729981446276,
+      "radial_wall_gap_error_pct": -28.84880097307724,
+      "conditional_speed_bias_pct": -4.3349108317564,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 9.07715640439916,
+        "radial_eta": 0.6864,
+        "equivalent_radius_m": 1.50426210773271,
+        "equivalent_wall_distance_m": 0.471736596984977,
+        "true_wall_distance_m": 0.392,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.956650891682436,
+        "mean_velocity_mps": 0.956650891682436,
+        "air_volume_m3ps": 8.6836697682094,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.392,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Wang2015_Table3",
+      "case": "shotcrete_W5.0_H2.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5.0,
+        2.5
+      ],
+      "reference_point_m": [
+        2.5,
+        2.114
+      ],
+      "default_center_m": [
+        2.5,
+        1.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        2.221087299814463
+      ],
+      "radial_position_error_m": 0.1070872998144627,
+      "radial_wall_gap_error_pct": -27.742823786130245,
+      "conditional_speed_bias_pct": -4.138499109542703,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 9.8174770424681,
+        "radial_eta": 0.6912,
+        "equivalent_radius_m": 1.52753867587914,
+        "equivalent_wall_distance_m": 0.47170394311148,
+        "true_wall_distance_m": 0.386,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.958615008904573,
+        "mean_velocity_mps": 0.958615008904573,
+        "air_volume_m3ps": 9.411180842486,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.386,
+      "wall": "roof",
+      "support": "shotcrete",
+      "predicted_wall_distance_m": 0.27891270018553727
+    },
+    {
+      "source": "Yang2026_Table5_FLAGGED",
+      "case": "inlet_0.5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5,
+        4.5
+      ],
+      "reference_point_m": [
+        2.5,
+        0.523
+      ],
+      "default_center_m": [
+        2.5,
+        2.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        0.5020428603339684
+      ],
+      "radial_position_error_m": 0.02095713966603198,
+      "radial_wall_gap_error_pct": -4.00710127457592,
+      "conditional_speed_bias_pct": -0.5112617524078988,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 19.8174770424681,
+        "radial_eta": 0.767555555555556,
+        "equivalent_radius_m": 2.35166709835731,
+        "equivalent_wall_distance_m": 0.546631952195944,
+        "true_wall_distance_m": 0.523,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.994887382475921,
+        "mean_velocity_mps": 0.994887382475921,
+        "air_volume_m3ps": 19.7161578620578,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.523,
+      "wall": "floor",
+      "inlet_mps": 0.5,
+      "predicted_wall_distance_m": 0.5020428603339671
+    },
+    {
+      "source": "Yang2026_Table5_FLAGGED",
+      "case": "inlet_1",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5,
+        4.5
+      ],
+      "reference_point_m": [
+        2.5,
+        0.509
+      ],
+      "default_center_m": [
+        2.5,
+        2.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        0.5020428603339673
+      ],
+      "radial_position_error_m": 0.006957139666032451,
+      "radial_wall_gap_error_pct": -1.3668250817352567,
+      "conditional_speed_bias_pct": -0.17263803340810124,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 19.8174770424681,
+        "radial_eta": 0.773777777777778,
+        "equivalent_radius_m": 2.35166709835731,
+        "equivalent_wall_distance_m": 0.531999356917276,
+        "true_wall_distance_m": 0.509,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.998273619665919,
+        "mean_velocity_mps": 0.998273619665919,
+        "air_volume_m3ps": 19.7832645398309,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.509,
+      "wall": "floor",
+      "inlet_mps": 1,
+      "predicted_wall_distance_m": 0.5020428603339671
+    },
+    {
+      "source": "Yang2026_Table5_FLAGGED",
+      "case": "inlet_3",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5,
+        4.5
+      ],
+      "reference_point_m": [
+        2.5,
+        0.513
+      ],
+      "default_center_m": [
+        2.5,
+        2.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        0.5020428603339668
+      ],
+      "radial_position_error_m": 0.010957139666032928,
+      "radial_wall_gap_error_pct": -2.135894671741312,
+      "conditional_speed_bias_pct": -0.27056518919480466,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 19.8174770424681,
+        "radial_eta": 0.772,
+        "equivalent_radius_m": 2.35166709835731,
+        "equivalent_wall_distance_m": 0.536180098425467,
+        "true_wall_distance_m": 0.513,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.997294348108052,
+        "mean_velocity_mps": 0.997294348108052,
+        "air_volume_m3ps": 19.7638578482145,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.513,
+      "wall": "floor",
+      "inlet_mps": 3,
+      "predicted_wall_distance_m": 0.5020428603339671
+    },
+    {
+      "source": "Yang2026_Table5_FLAGGED",
+      "case": "inlet_5",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5,
+        4.5
+      ],
+      "reference_point_m": [
+        2.5,
+        0.518
+      ],
+      "default_center_m": [
+        2.5,
+        2.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        0.5020428603339675
+      ],
+      "radial_position_error_m": 0.015957139666032454,
+      "radial_wall_gap_error_pct": -3.0805288930564667,
+      "conditional_speed_bias_pct": -0.39163971255979924,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 19.8174770424681,
+        "radial_eta": 0.769777777777778,
+        "equivalent_radius_m": 2.35166709835731,
+        "equivalent_wall_distance_m": 0.541406025310706,
+        "true_wall_distance_m": 0.518,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.996083602874402,
+        "mean_velocity_mps": 0.996083602874402,
+        "air_volume_m3ps": 19.7398639323424,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.518,
+      "wall": "floor",
+      "inlet_mps": 5,
+      "predicted_wall_distance_m": 0.5020428603339671
+    },
+    {
+      "source": "Yang2026_Table5_FLAGGED",
+      "case": "inlet_8",
+      "mode": "semicircle-wei-radial",
+      "geometry_m": [
+        5,
+        4.5
+      ],
+      "reference_point_m": [
+        2.5,
+        0.525
+      ],
+      "default_center_m": [
+        2.5,
+        2.25
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.0055,
+      "predicted_same_ray_contour_point_m": [
+        2.5,
+        0.5020428603339677
+      ],
+      "radial_position_error_m": 0.022957139666032095,
+      "radial_wall_gap_error_pct": -4.372788507815651,
+      "conditional_speed_bias_pct": -0.5587109403413004,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 19.8174770424681,
+        "radial_eta": 0.766666666666667,
+        "equivalent_radius_m": 2.35166709835731,
+        "equivalent_wall_distance_m": 0.548722322950039,
+        "true_wall_distance_m": 0.525,
+        "measured_velocity_mps": 1,
+        "correction_factor": 0.994412890596587,
+        "mean_velocity_mps": 0.994412890596587,
+        "air_volume_m3ps": 19.7067546301322,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "SEMICIRCLE_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "paper_wall_distance_m": 0.525,
+      "wall": "floor",
+      "inlet_mps": 8,
+      "predicted_wall_distance_m": 0.5020428603339671
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale1_floor0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.097188,
+        0.0187
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.0985752416018775,
+        0.022096148954092454
+      ],
+      "radial_position_error_m": 0.0036685510737023957,
+      "radial_wall_gap_error_pct": 18.16122435343559,
+      "conditional_speed_bias_pct": 1.931283637686998,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.81116465120485,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0213336709647115,
+        "true_wall_distance_m": 0.0187,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01931283637687,
+        "mean_velocity_mps": 1.01931283637687,
+        "air_volume_m3ps": 0.0477199162121985,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "floor",
+      "sample_index": 0,
+      "paper_wall_distance_m": 0.0187,
+      "predicted_wall_distance_m": 0.022096148954092506
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale1_floor1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.113594,
+        0.0187
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.11428762080093875,
+        0.022096148954092454
+      ],
+      "radial_position_error_m": 0.0034662569918974934,
+      "radial_wall_gap_error_pct": 18.16122435343559,
+      "conditional_speed_bias_pct": 1.931283637686998,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.81116465120485,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0213336709647115,
+        "true_wall_distance_m": 0.0187,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01931283637687,
+        "mean_velocity_mps": 1.01931283637687,
+        "air_volume_m3ps": 0.0477199162121985,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "floor",
+      "sample_index": 1,
+      "paper_wall_distance_m": 0.0187,
+      "predicted_wall_distance_m": 0.022096148954092506
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale1_floor2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.13,
+        0.0187
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.13,
+        0.022096148954092454
+      ],
+      "radial_position_error_m": 0.003396148954092466,
+      "radial_wall_gap_error_pct": 18.16122435343559,
+      "conditional_speed_bias_pct": 1.931283637686998,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.81116465120485,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0213336709647115,
+        "true_wall_distance_m": 0.0187,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01931283637687,
+        "mean_velocity_mps": 1.01931283637687,
+        "air_volume_m3ps": 0.0477199162121985,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "floor",
+      "sample_index": 2,
+      "paper_wall_distance_m": 0.0187,
+      "predicted_wall_distance_m": 0.022096148954092506
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale1_floor3",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.146406,
+        0.0187
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.14571237919906127,
+        0.022096148954092454
+      ],
+      "radial_position_error_m": 0.0034662569918974934,
+      "radial_wall_gap_error_pct": 18.16122435343559,
+      "conditional_speed_bias_pct": 1.931283637686998,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.81116465120485,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0213336709647115,
+        "true_wall_distance_m": 0.0187,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01931283637687,
+        "mean_velocity_mps": 1.01931283637687,
+        "air_volume_m3ps": 0.0477199162121985,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "floor",
+      "sample_index": 3,
+      "paper_wall_distance_m": 0.0187,
+      "predicted_wall_distance_m": 0.022096148954092506
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale1_floor4",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.162812,
+        0.0187
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.1614247583981225,
+        0.022096148954092454
+      ],
+      "radial_position_error_m": 0.0036685510737023957,
+      "radial_wall_gap_error_pct": 18.16122435343559,
+      "conditional_speed_bias_pct": 1.931283637686998,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.81116465120485,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0213336709647115,
+        "true_wall_distance_m": 0.0187,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01931283637687,
+        "mean_velocity_mps": 1.01931283637687,
+        "air_volume_m3ps": 0.0477199162121985,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "floor",
+      "sample_index": 4,
+      "paper_wall_distance_m": 0.0187,
+      "predicted_wall_distance_m": 0.022096148954092506
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale1_left0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.0236747,
+        0.0666989
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.02900692081929586,
+        0.06832020997439624
+      ],
+      "radial_position_error_m": 0.005573259809017427,
+      "radial_wall_gap_error_pct": 22.522865418762915,
+      "conditional_speed_bias_pct": 2.360677159731006,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.817886923076923,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0205742223912894,
+        "true_wall_distance_m": 0.0236747,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02360677159731,
+        "mean_velocity_mps": 1.02360677159731,
+        "air_volume_m3ps": 0.0479209400996913,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "left",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale1_left1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.0236747,
+        0.08511525
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.02900692081929586,
+        0.08581297880523481
+      ],
+      "radial_position_error_m": 0.0053776764825886145,
+      "radial_wall_gap_error_pct": 22.522865418762915,
+      "conditional_speed_bias_pct": 2.360677159731006,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.817886923076923,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0205742223912895,
+        "true_wall_distance_m": 0.0236747,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02360677159731,
+        "mean_velocity_mps": 1.02360677159731,
+        "air_volume_m3ps": 0.0479209400996913,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "left",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale1_left2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.0236747,
+        0.1035316
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.02900692081929586,
+        0.10330574763607338
+      ],
+      "radial_position_error_m": 0.005337001794643084,
+      "radial_wall_gap_error_pct": 22.522865418762915,
+      "conditional_speed_bias_pct": 2.360677159731006,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.817886923076923,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0205742223912895,
+        "true_wall_distance_m": 0.0236747,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02360677159731,
+        "mean_velocity_mps": 1.02360677159731,
+        "air_volume_m3ps": 0.0479209400996913,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "left",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale1_right0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.23632530000000002,
+        0.0666989
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.23099307918070416,
+        0.06832020997439624
+      ],
+      "radial_position_error_m": 0.005573259809017427,
+      "radial_wall_gap_error_pct": 22.522865418762915,
+      "conditional_speed_bias_pct": 2.360677159731006,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.817886923076923,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0205742223912894,
+        "true_wall_distance_m": 0.0236747,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02360677159731,
+        "mean_velocity_mps": 1.02360677159731,
+        "air_volume_m3ps": 0.0479209400996913,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "right",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale1_right1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.23632530000000002,
+        0.08511525
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.23099307918070416,
+        0.08581297880523481
+      ],
+      "radial_position_error_m": 0.0053776764825886145,
+      "radial_wall_gap_error_pct": 22.522865418762915,
+      "conditional_speed_bias_pct": 2.360677159731006,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.817886923076923,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0205742223912895,
+        "true_wall_distance_m": 0.0236747,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02360677159731,
+        "mean_velocity_mps": 1.02360677159731,
+        "air_volume_m3ps": 0.0479209400996913,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "right",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale1_right2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.26,
+        0.113,
+        0.0850561385282365,
+        0.183,
+        0.066
+      ],
+      "reference_point_m": [
+        0.23632530000000002,
+        0.1035316
+      ],
+      "default_center_m": [
+        0.13,
+        0.09902806926411825
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00011297498641451099,
+      "predicted_same_ray_contour_point_m": [
+        0.23099307918070416,
+        0.10330574763607338
+      ],
+      "radial_position_error_m": 0.005337001794643084,
+      "radial_wall_gap_error_pct": 22.522865418762915,
+      "conditional_speed_bias_pct": 2.360677159731006,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.0468157708891589,
+        "radial_eta": 0.817886923076923,
+        "equivalent_radius_m": 0.112974986414511,
+        "equivalent_wall_distance_m": 0.0205742223912895,
+        "true_wall_distance_m": 0.0236747,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02360677159731,
+        "mean_velocity_mps": 1.02360677159731,
+        "air_volume_m3ps": 0.0479209400996913,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 1,
+      "wall": "right",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale2_floor0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.157976,
+        0.0408
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.1601768412836776,
+        0.04419229790818496
+      ],
+      "radial_position_error_m": 0.004043684885573497,
+      "radial_wall_gap_error_pct": 8.314455657316056,
+      "conditional_speed_bias_pct": 0.915094781412007,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.793997801314382,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0465461911957342,
+        "true_wall_distance_m": 0.0408,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00915094781412,
+        "mean_velocity_mps": 1.00915094781412,
+        "air_volume_m3ps": 0.188976718261774,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "floor",
+      "sample_index": 0,
+      "paper_wall_distance_m": 0.0408,
+      "predicted_wall_distance_m": 0.04419229790818501
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale2_floor1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.208988,
+        0.0408
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.2100884206418388,
+        0.04419229790818496
+      ],
+      "radial_position_error_m": 0.0035663161226762966,
+      "radial_wall_gap_error_pct": 8.314455657316056,
+      "conditional_speed_bias_pct": 0.915094781412007,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.793997801314382,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0465461911957342,
+        "true_wall_distance_m": 0.0408,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00915094781412,
+        "mean_velocity_mps": 1.00915094781412,
+        "air_volume_m3ps": 0.188976718261774,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "floor",
+      "sample_index": 1,
+      "paper_wall_distance_m": 0.0408,
+      "predicted_wall_distance_m": 0.04419229790818501
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale2_floor2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.26,
+        0.0408
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.26,
+        0.04419229790818496
+      ],
+      "radial_position_error_m": 0.0033922979081849537,
+      "radial_wall_gap_error_pct": 8.314455657316056,
+      "conditional_speed_bias_pct": 0.915094781412007,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.793997801314382,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0465461911957342,
+        "true_wall_distance_m": 0.0408,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00915094781412,
+        "mean_velocity_mps": 1.00915094781412,
+        "air_volume_m3ps": 0.188976718261774,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "floor",
+      "sample_index": 2,
+      "paper_wall_distance_m": 0.0408,
+      "predicted_wall_distance_m": 0.04419229790818501
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale2_floor3",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.311012,
+        0.0408
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.3099115793581612,
+        0.04419229790818496
+      ],
+      "radial_position_error_m": 0.0035663161226762966,
+      "radial_wall_gap_error_pct": 8.314455657316056,
+      "conditional_speed_bias_pct": 0.915094781412007,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.793997801314382,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0465461911957342,
+        "true_wall_distance_m": 0.0408,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00915094781412,
+        "mean_velocity_mps": 1.00915094781412,
+        "air_volume_m3ps": 0.188976718261774,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "floor",
+      "sample_index": 3,
+      "paper_wall_distance_m": 0.0408,
+      "predicted_wall_distance_m": 0.04419229790818501
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale2_floor4",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.362024,
+        0.0408
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.3598231587163224,
+        0.04419229790818496
+      ],
+      "radial_position_error_m": 0.004043684885573497,
+      "radial_wall_gap_error_pct": 8.314455657316056,
+      "conditional_speed_bias_pct": 0.915094781412007,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.793997801314382,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0465461911957342,
+        "true_wall_distance_m": 0.0408,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00915094781412,
+        "mean_velocity_mps": 1.00915094781412,
+        "air_volume_m3ps": 0.188976718261774,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "floor",
+      "sample_index": 4,
+      "paper_wall_distance_m": 0.0408,
+      "predicted_wall_distance_m": 0.04419229790818501
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale2_left0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.0487494,
+        0.1237978
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.05801384163859183,
+        0.1270544158083037
+      ],
+      "radial_position_error_m": 0.009820154041448008,
+      "radial_wall_gap_error_pct": 19.004216746445792,
+      "conditional_speed_bias_pct": 2.0152124867069965,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.812502307692308,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0423650984824275,
+        "true_wall_distance_m": 0.0487494,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02015212486707,
+        "mean_velocity_mps": 1.02015212486707,
+        "air_volume_m3ps": 0.191036832599462,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "left",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale2_left1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.0487494,
+        0.1697805
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.05801384163859183,
+        0.17102053436174272
+      ],
+      "radial_position_error_m": 0.009347061789309873,
+      "radial_wall_gap_error_pct": 19.004216746445792,
+      "conditional_speed_bias_pct": 2.0152124867069965,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.812502307692308,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0423650984824275,
+        "true_wall_distance_m": 0.0487494,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02015212486707,
+        "mean_velocity_mps": 1.02015212486707,
+        "air_volume_m3ps": 0.191036832599462,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "left",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale2_left2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.0487494,
+        0.2157632
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.05801384163859183,
+        0.2149866529151817
+      ],
+      "radial_position_error_m": 0.009296929829240068,
+      "radial_wall_gap_error_pct": 19.004216746445792,
+      "conditional_speed_bias_pct": 2.0152124867069965,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.812502307692308,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0423650984824275,
+        "true_wall_distance_m": 0.0487494,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02015212486707,
+        "mean_velocity_mps": 1.02015212486707,
+        "air_volume_m3ps": 0.191036832599462,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "left",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale2_right0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.4712506,
+        0.1237978
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.4619861583614082,
+        0.1270544158083037
+      ],
+      "radial_position_error_m": 0.009820154041448008,
+      "radial_wall_gap_error_pct": 19.004216746445792,
+      "conditional_speed_bias_pct": 2.0152124867069965,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.812502307692308,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0423650984824275,
+        "true_wall_distance_m": 0.0487494,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02015212486707,
+        "mean_velocity_mps": 1.02015212486707,
+        "air_volume_m3ps": 0.191036832599462,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "right",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale2_right1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.4712506,
+        0.1697805
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.4619861583614082,
+        0.17102053436174272
+      ],
+      "radial_position_error_m": 0.009347061789309873,
+      "radial_wall_gap_error_pct": 19.004216746445792,
+      "conditional_speed_bias_pct": 2.0152124867069965,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.812502307692308,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0423650984824275,
+        "true_wall_distance_m": 0.0487494,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02015212486707,
+        "mean_velocity_mps": 1.02015212486707,
+        "air_volume_m3ps": 0.191036832599462,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "right",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale2_right2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.52,
+        0.226,
+        0.170112277056473,
+        0.366,
+        0.132
+      ],
+      "reference_point_m": [
+        0.4712506,
+        0.2157632
+      ],
+      "default_center_m": [
+        0.26,
+        0.1980561385282365
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.00022594997282902198,
+      "predicted_same_ray_contour_point_m": [
+        0.4619861583614082,
+        0.2149866529151817
+      ],
+      "radial_position_error_m": 0.009296929829240068,
+      "radial_wall_gap_error_pct": 19.004216746445792,
+      "conditional_speed_bias_pct": 2.0152124867069965,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.187263083556636,
+        "radial_eta": 0.812502307692308,
+        "equivalent_radius_m": 0.225949972829022,
+        "equivalent_wall_distance_m": 0.0423650984824275,
+        "true_wall_distance_m": 0.0487494,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.02015212486707,
+        "mean_velocity_mps": 1.02015212486707,
+        "air_volume_m3ps": 0.191036832599462,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 2,
+      "wall": "right",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale3_floor0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.21876400000000001,
+        0.06290000000000001
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.22124163968535165,
+        0.06628844686227767
+      ],
+      "radial_position_error_m": 0.004197650598716925,
+      "radial_wall_gap_error_pct": 5.3870379368484045,
+      "conditional_speed_bias_pct": 0.5992889773339893,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.78827551801756,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0717587114267569,
+        "true_wall_distance_m": 0.0629,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00599288977334,
+        "mean_velocity_mps": 1.00599288977334,
+        "air_volume_m3ps": 0.423866993793763,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "floor",
+      "sample_index": 0,
+      "paper_wall_distance_m": 0.06290000000000001,
+      "predicted_wall_distance_m": 0.06628844686227753
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale3_floor1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.30438200000000004,
+        0.06290000000000001
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.30562081984267575,
+        0.06628844686227736
+      ],
+      "radial_position_error_m": 0.003607803589593573,
+      "radial_wall_gap_error_pct": 5.387037936847916,
+      "conditional_speed_bias_pct": 0.5992889773339893,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.788275518017559,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0717587114267569,
+        "true_wall_distance_m": 0.0629,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00599288977334,
+        "mean_velocity_mps": 1.00599288977334,
+        "air_volume_m3ps": 0.423866993793763,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "floor",
+      "sample_index": 1,
+      "paper_wall_distance_m": 0.06290000000000001,
+      "predicted_wall_distance_m": 0.06628844686227753
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale3_floor2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.39,
+        0.06290000000000001
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.39,
+        0.06628844686227767
+      ],
+      "radial_position_error_m": 0.003388446862277638,
+      "radial_wall_gap_error_pct": 5.3870379368484045,
+      "conditional_speed_bias_pct": 0.5992889773339893,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.78827551801756,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0717587114267569,
+        "true_wall_distance_m": 0.0629,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00599288977334,
+        "mean_velocity_mps": 1.00599288977334,
+        "air_volume_m3ps": 0.423866993793763,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "floor",
+      "sample_index": 2,
+      "paper_wall_distance_m": 0.06290000000000001,
+      "predicted_wall_distance_m": 0.06628844686227753
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale3_floor3",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.47561800000000004,
+        0.06290000000000001
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.4743791801573242,
+        0.06628844686227767
+      ],
+      "radial_position_error_m": 0.0036078035895938847,
+      "radial_wall_gap_error_pct": 5.3870379368484045,
+      "conditional_speed_bias_pct": 0.5992889773339893,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.78827551801756,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0717587114267569,
+        "true_wall_distance_m": 0.0629,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00599288977334,
+        "mean_velocity_mps": 1.00599288977334,
+        "air_volume_m3ps": 0.423866993793763,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "floor",
+      "sample_index": 3,
+      "paper_wall_distance_m": 0.06290000000000001,
+      "predicted_wall_distance_m": 0.06628844686227753
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale3_floor4",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.5612360000000001,
+        0.06290000000000001
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.5587583603146484,
+        0.06628844686227767
+      ],
+      "radial_position_error_m": 0.004197650598716926,
+      "radial_wall_gap_error_pct": 5.3870379368484045,
+      "conditional_speed_bias_pct": 0.5992889773339893,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.78827551801756,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0717587114267569,
+        "true_wall_distance_m": 0.0629,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00599288977334,
+        "mean_velocity_mps": 1.00599288977334,
+        "air_volume_m3ps": 0.423866993793763,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "floor",
+      "sample_index": 4,
+      "paper_wall_distance_m": 0.06290000000000001,
+      "predicted_wall_distance_m": 0.06628844686227753
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale3_left0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.0738241,
+        0.1808967
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.08702076245788765,
+        0.1857461756309981
+      ],
+      "radial_position_error_m": 0.014059491951100723,
+      "radial_wall_gap_error_pct": 17.875818950569887,
+      "conditional_speed_bias_pct": 1.902764233339993,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.810707435897436,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0641559745735655,
+        "true_wall_distance_m": 0.0738241,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.0190276423334,
+        "mean_velocity_mps": 1.0190276423334,
+        "air_volume_m3ps": 0.429359081698801,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "left",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale3_left1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.0738241,
+        0.25444575
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.08702076245788765,
+        0.2562254091555859
+      ],
+      "radial_position_error_m": 0.013316121309806467,
+      "radial_wall_gap_error_pct": 17.875818950569887,
+      "conditional_speed_bias_pct": 1.902764233339993,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.810707435897436,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0641559745735655,
+        "true_wall_distance_m": 0.0738241,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.0190276423334,
+        "mean_velocity_mps": 1.0190276423334,
+        "air_volume_m3ps": 0.429359081698801,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "left",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale3_left2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.0738241,
+        0.32799480000000003
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.08702076245788765,
+        0.32670464268017363
+      ],
+      "radial_position_error_m": 0.013259577894387253,
+      "radial_wall_gap_error_pct": 17.875818950569887,
+      "conditional_speed_bias_pct": 1.902764233339993,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.810707435897436,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0641559745735655,
+        "true_wall_distance_m": 0.0738241,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.0190276423334,
+        "mean_velocity_mps": 1.0190276423334,
+        "air_volume_m3ps": 0.429359081698801,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "left",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale3_right0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.7061759000000001,
+        0.1808967
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.6929792375421124,
+        0.1857461756309981
+      ],
+      "radial_position_error_m": 0.014059491951100725,
+      "radial_wall_gap_error_pct": 17.875818950569887,
+      "conditional_speed_bias_pct": 1.902764233339993,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.810707435897436,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0641559745735655,
+        "true_wall_distance_m": 0.0738240999999999,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.0190276423334,
+        "mean_velocity_mps": 1.0190276423334,
+        "air_volume_m3ps": 0.429359081698801,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "right",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale3_right1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.7061759000000001,
+        0.25444575
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.6929792375421124,
+        0.2562254091555859
+      ],
+      "radial_position_error_m": 0.013316121309806469,
+      "radial_wall_gap_error_pct": 17.875818950569887,
+      "conditional_speed_bias_pct": 1.902764233339993,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.810707435897436,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0641559745735655,
+        "true_wall_distance_m": 0.0738240999999999,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.0190276423334,
+        "mean_velocity_mps": 1.0190276423334,
+        "air_volume_m3ps": 0.429359081698801,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "right",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale3_right2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        0.78,
+        0.339,
+        0.2551684155847095,
+        0.5489999999999999,
+        0.198
+      ],
+      "reference_point_m": [
+        0.7061759000000001,
+        0.32799480000000003
+      ],
+      "default_center_m": [
+        0.39,
+        0.2970842077923548
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000338924959243534,
+      "predicted_same_ray_contour_point_m": [
+        0.6929792375421124,
+        0.32670464268017363
+      ],
+      "radial_position_error_m": 0.013259577894387257,
+      "radial_wall_gap_error_pct": 17.875818950569887,
+      "conditional_speed_bias_pct": 1.902764233339993,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.42134193800243,
+        "radial_eta": 0.810707435897436,
+        "equivalent_radius_m": 0.338924959243534,
+        "equivalent_wall_distance_m": 0.0641559745735654,
+        "true_wall_distance_m": 0.0738240999999999,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.0190276423334,
+        "mean_velocity_mps": 1.0190276423334,
+        "air_volume_m3ps": 0.429359081698801,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 3,
+      "wall": "right",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale4_floor0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.279552,
+        0.085
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.2821678379301335,
+        0.08838459581636998
+      ],
+      "radial_position_error_m": 0.004277627486927051,
+      "radial_wall_gap_error_pct": 3.9818774310234506,
+      "conditional_speed_bias_pct": 0.44529295277400127,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.785414376369148,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0969712316577796,
+        "true_wall_distance_m": 0.085,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00445292952774,
+        "mean_velocity_mps": 1.00445292952774,
+        "air_volume_m3ps": 0.75238781148344,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "floor",
+      "sample_index": 0,
+      "paper_wall_distance_m": 0.085,
+      "predicted_wall_distance_m": 0.08838459581637002
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale4_floor1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.399776,
+        0.085
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.4010839189650668,
+        0.08838459581636998
+      ],
+      "radial_position_error_m": 0.003628517722069178,
+      "radial_wall_gap_error_pct": 3.9818774310234506,
+      "conditional_speed_bias_pct": 0.44529295277400127,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.785414376369148,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0969712316577796,
+        "true_wall_distance_m": 0.085,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00445292952774,
+        "mean_velocity_mps": 1.00445292952774,
+        "air_volume_m3ps": 0.75238781148344,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "floor",
+      "sample_index": 1,
+      "paper_wall_distance_m": 0.085,
+      "predicted_wall_distance_m": 0.08838459581637002
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale4_floor2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.52,
+        0.085
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.52,
+        0.08838459581636998
+      ],
+      "radial_position_error_m": 0.003384595816369931,
+      "radial_wall_gap_error_pct": 3.9818774310234506,
+      "conditional_speed_bias_pct": 0.44529295277400127,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.785414376369148,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0969712316577796,
+        "true_wall_distance_m": 0.085,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00445292952774,
+        "mean_velocity_mps": 1.00445292952774,
+        "air_volume_m3ps": 0.75238781148344,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "floor",
+      "sample_index": 2,
+      "paper_wall_distance_m": 0.085,
+      "predicted_wall_distance_m": 0.08838459581637002
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale4_floor3",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.640224,
+        0.085
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.6389160810349332,
+        0.08838459581636998
+      ],
+      "radial_position_error_m": 0.003628517722069178,
+      "radial_wall_gap_error_pct": 3.9818774310234506,
+      "conditional_speed_bias_pct": 0.44529295277400127,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.785414376369148,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0969712316577796,
+        "true_wall_distance_m": 0.085,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00445292952774,
+        "mean_velocity_mps": 1.00445292952774,
+        "air_volume_m3ps": 0.75238781148344,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "floor",
+      "sample_index": 3,
+      "paper_wall_distance_m": 0.085,
+      "predicted_wall_distance_m": 0.08838459581637002
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale4_floor4",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.760448,
+        0.085
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.7578321620698665,
+        0.08838459581636998
+      ],
+      "radial_position_error_m": 0.004277627486927051,
+      "radial_wall_gap_error_pct": 3.9818774310234506,
+      "conditional_speed_bias_pct": 0.44529295277400127,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.785414376369148,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0969712316577796,
+        "true_wall_distance_m": 0.085,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00445292952774,
+        "mean_velocity_mps": 1.00445292952774,
+        "air_volume_m3ps": 0.75238781148344,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "floor",
+      "sample_index": 4,
+      "paper_wall_distance_m": 0.085,
+      "predicted_wall_distance_m": 0.08838459581637002
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale4_left0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.0988988,
+        0.2379956
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.11602768327718349,
+        0.2444272181133572
+      ],
+      "radial_position_error_m": 0.01829656672382666,
+      "radial_wall_gap_error_pct": 17.31960678712332,
+      "conditional_speed_bias_pct": 1.8470313494129975,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.80981,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0859468506647036,
+        "true_wall_distance_m": 0.0988988,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01847031349413,
+        "mean_velocity_mps": 1.01847031349413,
+        "air_volume_m3ps": 0.762887565663216,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "left",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale4_left1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.0988988,
+        0.339111
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.11602768327718349,
+        0.3414296070743819
+      ],
+      "radial_position_error_m": 0.017285097080686318,
+      "radial_wall_gap_error_pct": 17.31960678712332,
+      "conditional_speed_bias_pct": 1.8470313494129975,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.80981,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0859468506647036,
+        "true_wall_distance_m": 0.0988988,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01847031349413,
+        "mean_velocity_mps": 1.01847031349413,
+        "air_volume_m3ps": 0.762887565663216,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "left",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale4_left2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.0988988,
+        0.4402264
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.11602768327718349,
+        0.4384319960354067
+      ],
+      "radial_position_error_m": 0.01722261675563632,
+      "radial_wall_gap_error_pct": 17.31960678712332,
+      "conditional_speed_bias_pct": 1.8470313494129975,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.80981,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0859468506647036,
+        "true_wall_distance_m": 0.0988988,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01847031349413,
+        "mean_velocity_mps": 1.01847031349413,
+        "air_volume_m3ps": 0.762887565663216,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "left",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale4_right0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.9411012000000001,
+        0.2379956
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.9239723167228167,
+        0.2444272181133572
+      ],
+      "radial_position_error_m": 0.01829656672382666,
+      "radial_wall_gap_error_pct": 17.31960678712332,
+      "conditional_speed_bias_pct": 1.8470313494129975,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.80981,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0859468506647036,
+        "true_wall_distance_m": 0.0988988,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01847031349413,
+        "mean_velocity_mps": 1.01847031349413,
+        "air_volume_m3ps": 0.762887565663216,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "right",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale4_right1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.9411012000000001,
+        0.339111
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.9239723167228167,
+        0.3414296070743819
+      ],
+      "radial_position_error_m": 0.017285097080686325,
+      "radial_wall_gap_error_pct": 17.31960678712332,
+      "conditional_speed_bias_pct": 1.8470313494129975,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.80981,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0859468506647035,
+        "true_wall_distance_m": 0.0988988,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01847031349413,
+        "mean_velocity_mps": 1.01847031349413,
+        "air_volume_m3ps": 0.762887565663216,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "right",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale4_right2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.04,
+        0.452,
+        0.340224554112946,
+        0.732,
+        0.264
+      ],
+      "reference_point_m": [
+        0.9411012000000001,
+        0.4402264
+      ],
+      "default_center_m": [
+        0.52,
+        0.396112277056473
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000451899945658045,
+      "predicted_same_ray_contour_point_m": [
+        0.9239723167228167,
+        0.4384319960354067
+      ],
+      "radial_position_error_m": 0.017222616755636324,
+      "radial_wall_gap_error_pct": 17.31960678712332,
+      "conditional_speed_bias_pct": 1.8470313494129975,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 0.749052334226543,
+        "radial_eta": 0.80981,
+        "equivalent_radius_m": 0.451899945658045,
+        "equivalent_wall_distance_m": 0.0859468506647036,
+        "true_wall_distance_m": 0.0988988,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01847031349413,
+        "mean_velocity_mps": 1.01847031349413,
+        "air_volume_m3ps": 0.762887565663216,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 4,
+      "wall": "right",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale5_floor0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.34034000000000003,
+        0.10710000000000001
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.34303786746545284,
+        0.11048074477046238
+      ],
+      "radial_position_error_m": 0.004325265779597505,
+      "radial_wall_gap_error_pct": 3.156624435539057,
+      "conditional_speed_bias_pct": 0.35410067873300477,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.783697691380101,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.122183751888802,
+        "true_wall_distance_m": 0.1071,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00354100678733,
+        "mean_velocity_mps": 1.00354100678733,
+        "air_volume_m3ps": 1.17453864629079,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "floor",
+      "sample_index": 0,
+      "paper_wall_distance_m": 0.10710000000000001,
+      "predicted_wall_distance_m": 0.11048074477046255
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale5_floor1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.49517000000000005,
+        0.10710000000000001
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.4965189337327265,
+        0.11048074477046238
+      ],
+      "radial_position_error_m": 0.0036399254687830653,
+      "radial_wall_gap_error_pct": 3.156624435539057,
+      "conditional_speed_bias_pct": 0.35410067873300477,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.783697691380101,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.122183751888802,
+        "true_wall_distance_m": 0.1071,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00354100678733,
+        "mean_velocity_mps": 1.00354100678733,
+        "air_volume_m3ps": 1.17453864629079,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "floor",
+      "sample_index": 1,
+      "paper_wall_distance_m": 0.10710000000000001,
+      "predicted_wall_distance_m": 0.11048074477046255
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale5_floor2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.6500000000000001,
+        0.10710000000000001
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.6500000000000001,
+        0.11048074477046238
+      ],
+      "radial_position_error_m": 0.003380744770462334,
+      "radial_wall_gap_error_pct": 3.156624435539057,
+      "conditional_speed_bias_pct": 0.35410067873300477,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.783697691380101,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.122183751888802,
+        "true_wall_distance_m": 0.1071,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00354100678733,
+        "mean_velocity_mps": 1.00354100678733,
+        "air_volume_m3ps": 1.17453864629079,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "floor",
+      "sample_index": 2,
+      "paper_wall_distance_m": 0.10710000000000001,
+      "predicted_wall_distance_m": 0.11048074477046255
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale5_floor3",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.8048300000000002,
+        0.10710000000000001
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.8034810662672738,
+        0.11048074477046238
+      ],
+      "radial_position_error_m": 0.0036399254687830653,
+      "radial_wall_gap_error_pct": 3.156624435539057,
+      "conditional_speed_bias_pct": 0.35410067873300477,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.783697691380101,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.122183751888802,
+        "true_wall_distance_m": 0.1071,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00354100678733,
+        "mean_velocity_mps": 1.00354100678733,
+        "air_volume_m3ps": 1.17453864629079,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "floor",
+      "sample_index": 3,
+      "paper_wall_distance_m": 0.10710000000000001,
+      "predicted_wall_distance_m": 0.11048074477046255
+    },
+    {
+      "source": "Ding2016_2017_floor",
+      "case": "scale5_floor4",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.9596600000000002,
+        0.10710000000000001
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.956962132534547,
+        0.11048074477046288
+      ],
+      "radial_position_error_m": 0.0043252657795981335,
+      "radial_wall_gap_error_pct": 3.1566244355395234,
+      "conditional_speed_bias_pct": 0.35410067873300477,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.783697691380102,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.122183751888802,
+        "true_wall_distance_m": 0.1071,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.00354100678733,
+        "mean_velocity_mps": 1.00354100678733,
+        "air_volume_m3ps": 1.17453864629079,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "floor",
+      "sample_index": 4,
+      "paper_wall_distance_m": 0.10710000000000001,
+      "predicted_wall_distance_m": 0.11048074477046255
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale5_left0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.1239735,
+        0.29509450000000004
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.14503460409647906,
+        0.3031039565453
+      ],
+      "radial_position_error_m": 0.02253267627055818,
+      "radial_wall_gap_error_pct": 16.988391951892147,
+      "conditional_speed_bias_pct": 1.8137468134689971,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.809271538461538,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.107737726755842,
+        "true_wall_distance_m": 0.1239735,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01813746813469,
+        "mean_velocity_mps": 1.01813746813469,
+        "air_volume_m3ps": 1.19162226104655,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "left",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale5_left1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.1239735,
+        0.42377625
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.14503460409647906,
+        0.4266335331622725
+      ],
+      "radial_position_error_m": 0.021254038976912915,
+      "radial_wall_gap_error_pct": 16.988391951892147,
+      "conditional_speed_bias_pct": 1.8137468134689971,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.809271538461538,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.107737726755842,
+        "true_wall_distance_m": 0.1239735,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01813746813469,
+        "mean_velocity_mps": 1.01813746813469,
+        "air_volume_m3ps": 1.19162226104655,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "left",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale5_left2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        0.1239735,
+        0.552458
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        0.14503570345847994,
+        0.5501629899889865
+      ],
+      "radial_position_error_m": 0.021186870591879733,
+      "radial_wall_gap_error_pct": 16.989472652992532,
+      "conditional_speed_bias_pct": 1.8138555333280015,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.809273300333385,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.107736731518602,
+        "true_wall_distance_m": 0.1239735,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01813855533328,
+        "mean_velocity_mps": 1.01813855533328,
+        "air_volume_m3ps": 1.19162353349755,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "left",
+      "sample_index": 2
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale5_right0",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        1.1760265,
+        0.29509450000000004
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        1.1549653959035209,
+        0.3031039565453
+      ],
+      "radial_position_error_m": 0.02253267627055818,
+      "radial_wall_gap_error_pct": 16.988391951892147,
+      "conditional_speed_bias_pct": 1.8137468134689971,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.809271538461538,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.107737726755842,
+        "true_wall_distance_m": 0.1239735,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01813746813469,
+        "mean_velocity_mps": 1.01813746813469,
+        "air_volume_m3ps": 1.19162226104655,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "right",
+      "sample_index": 0
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale5_right1",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        1.1760265,
+        0.42377625
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        1.1549653959035209,
+        0.4266335331622725
+      ],
+      "radial_position_error_m": 0.021254038976912915,
+      "radial_wall_gap_error_pct": 16.988391951892147,
+      "conditional_speed_bias_pct": 1.8137468134689971,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.809271538461538,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.107737726755842,
+        "true_wall_distance_m": 0.1239735,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01813746813469,
+        "mean_velocity_mps": 1.01813746813469,
+        "air_volume_m3ps": 1.19162226104655,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "right",
+      "sample_index": 1
+    },
+    {
+      "source": "Ding2016_2017_side",
+      "case": "scale5_right2",
+      "mode": "three-center-wei-radial",
+      "geometry_m": [
+        1.3,
+        0.5650000000000001,
+        0.42528069264118257,
+        0.915,
+        0.33
+      ],
+      "reference_point_m": [
+        1.1760265,
+        0.552458
+      ],
+      "default_center_m": [
+        0.65,
+        0.49514034632059134
+      ],
+      "reference_type": "published_mean_velocity_contour",
+      "epsilon_m_assumed": 0.000564874932072556,
+      "predicted_same_ray_contour_point_m": [
+        1.15496429654152,
+        0.5501629899889865
+      ],
+      "radial_position_error_m": 0.021186870591879733,
+      "radial_wall_gap_error_pct": 16.989472652992532,
+      "conditional_speed_bias_pct": 1.8138555333280015,
+      "cli_output": {
+        "success": true,
+        "section_area_m2": 1.17039427222897,
+        "radial_eta": 0.809273300333385,
+        "equivalent_radius_m": 0.564874932072556,
+        "equivalent_wall_distance_m": 0.107736731518602,
+        "true_wall_distance_m": 0.1239735,
+        "measured_velocity_mps": 1,
+        "correction_factor": 1.01813855533328,
+        "mean_velocity_mps": 1.01813855533328,
+        "air_volume_m3ps": 1.19162353349755,
+        "integration_relative_error": 0,
+        "integration_converged": true,
+        "confidence_level": "EXPERIMENTAL",
+        "model_id": "THREE_CENTER_ARCH_WEI_RADIAL",
+        "model_capability": "DIRECT_CORRECTION",
+        "parameter_set_id": "WEI_RADIAL_ROUGHNESS",
+        "warning": "Radial extension of Wei; independent multi-section accuracy validation pending. Log law excludes wall layer."
+      },
+      "scale": 5,
+      "wall": "right",
+      "sample_index": 2
+    }
+  ]
+}

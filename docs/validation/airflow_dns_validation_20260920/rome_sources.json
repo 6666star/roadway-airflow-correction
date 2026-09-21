@@ -1,0 +1,32 @@
+[
+  {
+    "url": "http://newton.dma.uniroma1.it/square_duct/stat/plotyz_Retau150.dat",
+    "file": "plotyz_Retau150.dat",
+    "bytes": 947960,
+    "sha256": "de2c9b059f065223734494c520e19534252b777da7803845796735e375da2091"
+  },
+  {
+    "url": "http://newton.dma.uniroma1.it/square_duct/stat/plotyz_Retau220.dat",
+    "file": "plotyz_Retau220.dat",
+    "bytes": 1200350,
+    "sha256": "6fc3124b064e1ab45ff062e1467dfb40171c985543ac49ebc5bb8b18cbf64d6c"
+  },
+  {
+    "url": "http://newton.dma.uniroma1.it/square_duct/stat/plotyz_Retau500.dat",
+    "file": "plotyz_Retau500.dat",
+    "bytes": 3788008,
+    "sha256": "2f2f7f11d71b070c6bcf7d3ae025792675470766609db3225f4709101fd8dc4a"
+  },
+  {
+    "url": "http://newton.dma.uniroma1.it/square_duct/stat/plotyz_Retau1000.dat",
+    "file": "plotyz_Retau1000.dat",
+    "bytes": 15145421,
+    "sha256": "f60a0975b1713e39ee3d4137547fcf28baac9d2c99ec429e85d2c6e15c985d60"
+  },
+  {
+    "url": "http://newton.dma.uniroma1.it/square_duct/stat/plotyz_Retau2000.dat",
+    "file": "plotyz_Retau2000.dat",
+    "bytes": 110363025,
+    "sha256": "cf585bd74d7db532277445836261b6bfd3919f4bf5d241a02ed66e3f66a2c305"
+  }
+]

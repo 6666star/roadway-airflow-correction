@@ -1,0 +1,110 @@
+[
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\01_矩形\\Song_Shi_2022_矩形_LDA实体实验.pdf",
+    "sha256": "eb7f8ba285c9692a6a1ac5471c539da3b66417f373af86fdb4a20ceef22aee7d",
+    "pages": 8,
+    "candidate_pages": [
+      5,
+      6
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\01_矩形\\Wei_2019_矩形_现场实测.pdf",
+    "sha256": "da01dbd84379ccf63d81dced19c0412548975066b9d368294c75cbe6aec7ffd5",
+    "pages": 7,
+    "candidate_pages": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\01_矩形\\Zhou_2017_矩形近似_研究矿井实测.pdf",
+    "sha256": "1cda2fa930f579d8813ea970617cc070ff593e462cd709ea1f9a77589a3678da",
+    "pages": 11,
+    "candidate_pages": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\02_半圆拱\\Yang_2026_半圆拱算例_CFD_接收稿_数据存疑.pdf",
+    "sha256": "82687c56d80a2fdd0474da20b639224bef2007c7a3835bdcc35d28b54a027ab8",
+    "pages": 27,
+    "candidate_pages": [
+      6,
+      7,
+      19
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\02_半圆拱\\张浪_2018_半圆拱_现场实测与CFD.pdf",
+    "sha256": "bc0e58bc80d05828342c86e7d12351b872b877ab2149c239e3b18ff4c0fa20d4",
+    "pages": 7,
+    "candidate_pages": []
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\03_三心拱\\Ding_He_Nie_2016_三心拱_CFD_会议版_同源数据.pdf",
+    "sha256": "9a15fce752ac134079633de06753c937bf69398700fe8781e99ef49ed14581fe",
+    "pages": 5,
+    "candidate_pages": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\03_三心拱\\Ding_He_Nie_2017_三心拱_CFD_期刊版.pdf",
+    "sha256": "0462d4984860abf11de1c8ad8b51c1142c24a3fa67f1a108a9fa957caf5c6615",
+    "pages": 5,
+    "candidate_pages": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\04_梯形\\Luo_Zhao_2020_梯形近似_现场实测.pdf",
+    "sha256": "2966b3dd3781006446153ba4ee24bfc7b6bfa5a02840caaa60456bca43ef746c",
+    "pages": 16,
+    "candidate_pages": [
+      3,
+      7,
+      11,
+      12
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\05_多几何\\王翰锋_2015_矩形与半圆拱_现场实测与CFD.pdf",
+    "sha256": "0bbb67f65437cbc7acfee19ce20f493866a6df78fec2d50258e5f4150b916724",
+    "pages": 5,
+    "candidate_pages": [
+      3,
+      4
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\06_补充参考_未纳入独立验证\\时创新等_2026_不规则巷道_CFD_数据重合.pdf",
+    "sha256": "062985bfd76fa083c82c5187764d07151c09201bf857ff41b8e91ef1c4fac9cc",
+    "pages": 9,
+    "candidate_pages": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "path": "C:\\Users\\staro\\Desktop\\文章\\06_补充参考_未纳入独立验证\\王佳伟_2026_复杂巷道_基准待核查.pdf",
+    "sha256": "adf5d225878d9e98b423857e7a5e4437b91b146916da37ad326cff2ab182510f",
+    "pages": 3,
+    "candidate_pages": [
+      2,
+      3
+    ]
+  }
+]

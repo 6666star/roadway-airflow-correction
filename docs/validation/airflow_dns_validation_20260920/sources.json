@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/README",
+    "file": "README",
+    "bytes": 674,
+    "sha256": "64dff4644fb603cdd9a00816d67be57a8c75a732b80dfe3c57794fa1602e89bf"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/matlab/read_data_from_repository.m",
+    "file": "read_data_from_repository.m",
+    "bytes": 1723,
+    "sha256": "4fe2bb9785bc39476edae28b46adb5be5be615f2dc9a174d332be3a56068e83c"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/matlab/test_database_input.m",
+    "file": "test_database_input.m",
+    "bytes": 3550,
+    "sha256": "196887740b24de9aa66ee8d168d7b8701a97425715421538aa32d44e4b659eb5"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/doc/data-sheet2.pdf",
+    "file": "data-sheet2.pdf",
+    "bytes": 122744,
+    "sha256": "08c359ae640542bab5801ef985bc162421bd41e1dde4f622c14f483759db06e4"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/bin/statistics_02200_repo.bin",
+    "file": "statistics_02200_repo.bin",
+    "bytes": 679040,
+    "sha256": "90409d67999d24b71e1017cb97ff6309174efc39faf7866c0f82ea41018d831e"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/bin/statistics_02400_repo.bin",
+    "file": "statistics_02400_repo.bin",
+    "bytes": 679040,
+    "sha256": "bc4027209b6e365369e2228eeae59e4163783e87a730184b4485551551795c34"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/bin/statistics_02600_repo.bin",
+    "file": "statistics_02600_repo.bin",
+    "bytes": 679040,
+    "sha256": "c183690ec2d494ca9825ded202672dfb88eda9e6f4f9c595c6fcf378a3aea518"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/bin/statistics_02900_repo.bin",
+    "file": "statistics_02900_repo.bin",
+    "bytes": 1200256,
+    "sha256": "173f4eca82151332d97ab7497277323a471beab120d8d205c9ead18a39dcdb87"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/bin/statistics_03200_repo.bin",
+    "file": "statistics_03200_repo.bin",
+    "bytes": 1200256,
+    "sha256": "520eba9eec4b603e9a8b448dd37e7254e4ec94cb29cc6685be0019a18aaea3de"
+  },
+  {
+    "url": "https://www.iwu.kit.edu/nfm/dns_data/duct/bin/statistics_03500_repo.bin",
+    "file": "statistics_03500_repo.bin",
+    "bytes": 1200256,
+    "sha256": "2e343a8f703ddcce8e0e01478c9e16e60117dfc071c599da3f8ca20edcbff157"
+  }
+]

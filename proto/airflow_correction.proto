@@ -1,0 +1,103 @@
+syntax = "proto3";
+
+package airflow.v1;
+
+service AirflowCorrectionService {
+  rpc ValidateGeometry(GeometryRequest) returns (GeometryValidationResponse);
+  rpc ListApplicableModels(ModelQueryRequest) returns (ModelListResponse);
+  rpc CalculateCorrection(CorrectionRequest) returns (CorrectionResponse);
+  rpc CalculateField(FieldRequest) returns (FieldResponse);
+}
+
+enum GeometryType {
+  GEOMETRY_TYPE_UNSPECIFIED = 0;
+  GEOMETRY_TYPE_CIRCLE = 1;
+  GEOMETRY_TYPE_RECTANGLE = 2;
+  GEOMETRY_TYPE_SEMICIRCLE_ARCH = 3;
+  GEOMETRY_TYPE_TRAPEZOID = 4;
+  GEOMETRY_TYPE_THREE_CENTER_ARCH = 5;
+}
+
+message GeometryRequest {
+  GeometryType type = 1;
+  map<string, double> dimensions_m = 2;
+}
+
+message GeometryValidationResponse {
+  bool valid = 1;
+  double area_m2 = 2;
+  repeated string errors = 3;
+}
+
+message ModelQueryRequest {
+  GeometryRequest geometry = 1;
+  double inlet_velocity_mps = 2;
+}
+
+message ModelMetadata {
+  string model_id = 1;
+  string name = 2;
+  string version = 3;
+  string capability = 4;
+  string source = 5;
+}
+
+message ModelListResponse {
+  repeated ModelMetadata models = 1;
+}
+
+message SensorMeasurement {
+  double x_m = 1;
+  double y_m = 2;
+  double measured_velocity_mps = 3;
+}
+
+message CorrectionRequest {
+  GeometryRequest geometry = 1;
+  SensorMeasurement sensor = 2;
+  double inlet_velocity_mps = 3;
+  string model_id = 4;
+  int32 mesh_resolution = 5;
+  double centerline_tolerance_m = 6;
+  optional double absolute_roughness_m = 7;
+  optional double mapping_center_x_m = 8;
+  optional double mapping_center_y_m = 9;
+}
+
+message CorrectionResponse {
+  bool success = 1;
+  string error_code = 2;
+  string message = 3;
+  double section_area_m2 = 4;
+  double correction_factor = 5;
+  double mean_velocity_mps = 6;
+  double air_volume_m3ps = 7;
+  string confidence_level = 8;
+  ModelMetadata model = 9;
+  repeated string warnings = 10;
+  string parameter_set_id = 11;
+  double integration_relative_error = 12;
+  bool integration_converged = 13;
+  double radial_eta = 14;
+  double equivalent_radius_m = 15;
+  double equivalent_wall_distance_m = 16;
+  double true_wall_distance_m = 17;
+}
+
+message FieldRequest {
+  CorrectionRequest correction = 1;
+  int32 output_width = 2;
+  int32 output_height = 3;
+}
+
+message FieldPoint {
+  double x_m = 1;
+  double y_m = 2;
+  double velocity_mps = 3;
+  bool inside_section = 4;
+}
+
+message FieldResponse {
+  CorrectionResponse correction = 1;
+  repeated FieldPoint points = 2;
+}
