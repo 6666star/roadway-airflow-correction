@@ -42,7 +42,7 @@ def preset(name):
     data={
       '圆拱示例':dict(shape='半圆拱（直墙＋半圆顶）',width=4.,height=4.,sensor_x=2.,sensor_y=3.2,velocity=3.75),
       'Wei 点 111':dict(shape='矩形',width=4.94,height=3.43,sensor_x=.4,sensor_y=3.03,velocity=1.8),
-      '三心拱示例':dict(shape='三心拱（对称相切）',width=4.,wall=1.5,big_r=3.,small_r=.5,sensor_x=1.,sensor_y=2.,velocity=2.),
+      '三心拱示例':dict(shape='三心拱（对称相切）',threecenter_width=2.,wall=1.5,big_r=1.5,small_r=.5,sensor_x=1.,sensor_y=2.,velocity=2.),
       '梯形示例':dict(shape='等腰梯形',bottom=4.78,top=4.43,height=3.6,sensor_x=1.0875,sensor_y=1.8,velocity=2.)}
     st.session_state.update(common|data[name]); st.session_state.pop('v2_result',None)
 
@@ -65,10 +65,10 @@ with left:
         dims=dict(bottom_width=bottom,top_width=top,height=height)
         st.caption('上底相对下底居中；允许上宽下窄。原点为下底左端，上底较宽时部分x为负数。')
     else:
-        width=number('净宽 W（m）',min_value=.01,value=4.,step=.1,key='width')
+        width=number('净宽 W（m）',min_value=.01,value=2. if shape=='threecenter' else 4.,step=.1,key='threecenter_width' if shape=='threecenter' else 'width')
         if shape=='threecenter':
             wall=number('直墙高 h（m）',min_value=0.,value=1.5,step=.1,key='wall')
-            R=number('顶部大圆半径 R（m）',min_value=.01,value=3.,step=.1,key='big_r')
+            R=number('顶部大圆半径 R（m）',min_value=.01,value=1.5,step=.1,key='big_r')
             r=number('两侧小圆半径 r（m）',min_value=.01,value=.5,step=.05,key='small_r')
             try:f=ui.rise_from_radii(width,R,r)
             except ValueError as exc:errors.append(str(exc)); f=0.
